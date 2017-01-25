@@ -30,11 +30,6 @@ func config() {
 			if let i = dict["githubEndpointAfterAuth"] { GitHubConfig.endpointAfterAuth = i as! String }
 			if let i = dict["githubRedirectAfterAuth"] { GitHubConfig.redirectAfterAuth = i as! String }
 
-//			if let i = dict["twitterKey"] { TwitterConfig.appid = i as! String }
-//			if let i = dict["twitterSecret"] { TwitterConfig.secret = i as! String }
-//			if let i = dict["twitterEndpointAfterAuth"] { TwitterConfig.endpointAfterAuth = i as! String }
-//			if let i = dict["twitterRedirectAfterAuth"] { TwitterConfig.redirectAfterAuth = i as! String }
-
 			if let i = dict["googleKey"] { GoogleConfig.appid = i as! String }
 			if let i = dict["googleSecret"] { GoogleConfig.secret = i as! String }
 			if let i = dict["googleEndpointAfterAuth"] { GoogleConfig.endpointAfterAuth = i as! String }
