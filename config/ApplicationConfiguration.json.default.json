@@ -2,5 +2,15 @@
 	"facebookAppID": "---",
 	"facebookSecret": "---",
 	"edpointAfterAuth": "http://localhost:8181/auth/response",
-	"redirectAfterAuth":"http://localhost:8181/"
+	"redirectAfterAuth":"http://localhost:8181/",
+
+	"githubKey": "---",
+	"githubSecret": "---",
+	"githubEndpointAfterAuth": "http://localhost:8181/auth/response/github",
+	"githubRedirectAfterAuth":"http://localhost:8181/",
+
+	"googleKey": "---",
+	"googleSecret": "---",
+	"googleEndpointAfterAuth": "http://localhost:8181/auth/response/google",
+	"googleRedirectAfterAuth":"http://localhost:8181/"
 }
