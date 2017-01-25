@@ -18,7 +18,7 @@
 ## Demonstrating the OAuth2 Library for Perfect
 
 
-This project provides [OAuth2](https://oauth.net/2/) demo of the [Perfect Authentication](https://github.com/PerfectlySoft/Perfect-Authentication)libraries and select OAuth2 provider drivers - Facebook, Google, GitHub.
+This project provides [OAuth2](https://oauth.net/2/) demo of the [Perfect Authentication](https://github.com/PerfectlySoft/Perfect-Authentication) libraries and select OAuth2 provider drivers - Facebook, Google, GitHub.
 
 Full documentation can be found at [http://www.perfect.org/docs/OAuth2.html](http://www.perfect.org/docs/OAuth2.html)
 
