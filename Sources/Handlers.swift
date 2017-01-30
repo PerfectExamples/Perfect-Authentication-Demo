@@ -18,6 +18,8 @@ class Handlers {
 			request, response in
 			var context: [String : Any] = ["sessionID": request.session?.token ?? ""]
 
+			if let i = request.session?.userid, !i.isEmpty { context["authenticated"] = true }
+
 			if let i = request.session?.userid { context["userID"] = i }
 			if let i = request.session?.data["loginType"] { context["loginType"] = i }
 			if let i = request.session?.data["accessToken"] { context["accessToken"] = i }
@@ -32,8 +34,11 @@ class Handlers {
 	public static func logout(data: [String:Any]) throws -> RequestHandler {
 		return {
 			request, response in
-			MemorySessions.destroy(token: request.session?.token ?? "")
-			request.session?.token = ""
+			if let _ = request.session?.token {
+				MemorySessions.destroy(request, response)
+				request.session = PerfectSession() // wipe clean
+				response.request.session = PerfectSession() // wipe clean
+			}
 			response.redirect(path: "/")
 		}
 	}

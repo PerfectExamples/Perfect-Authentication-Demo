@@ -7,15 +7,20 @@
 <p>UserName: {{firstName}} {{lastName}}</p>
 <p>Picture: {{picture}}</p>
 <p>AccessToken: {{accessToken}}</p>
+
+{{^authenticated}}
 <p>
 <a href="/to/facebook" class="button mr">Log in with Facebook</a>
 <a href="/to/github" class="button mr">Log in with GitHub</a>
 <a href="/to/google" class="button mr">Log in with Google</a>
 </p>
+{{/authenticated}}
 
+{{#authenticated}}
 <p>
 <a href="/logout" class="button mr">Log out</a>
 </p>
+{{/authenticated}}
 
 </div>
 </div>
