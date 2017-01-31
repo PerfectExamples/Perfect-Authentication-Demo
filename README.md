@@ -55,8 +55,8 @@ The default file looks like this:
 {
 	"facebookAppID": "---",
 	"facebookSecret": "---",
-	"edpointAfterAuth": "http://localhost:8181/auth/response",
-	"redirectAfterAuth":"http://localhost:8181/",
+	"facebookEndpointAfterAuth": "http://localhost:8181/auth/response",
+	"facebookRedirectAfterAuth":"http://localhost:8181/",
 
 	"githubKey": "---",
 	"githubSecret": "---",
