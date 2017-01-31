@@ -35,6 +35,11 @@ func config() {
 			if let i = dict["googleEndpointAfterAuth"] { GoogleConfig.endpointAfterAuth = i as! String }
 			if let i = dict["googleRedirectAfterAuth"] { GoogleConfig.redirectAfterAuth = i as! String }
 
+			if let i = dict["linkedinKey"] { LinkedinConfig.appid = i as! String }
+			if let i = dict["linkedinSecret"] { LinkedinConfig.secret = i as! String }
+			if let i = dict["linkedinEndpointAfterAuth"] { LinkedinConfig.endpointAfterAuth = i as! String }
+			if let i = dict["linkedinRedirectAfterAuth"] { LinkedinConfig.redirectAfterAuth = i as! String }
+
 		}
 	} else {
 		print("Unable to get Configuration")

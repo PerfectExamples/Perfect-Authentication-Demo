@@ -12,5 +12,10 @@
 	"googleKey": "---",
 	"googleSecret": "---",
 	"googleEndpointAfterAuth": "http://localhost:8181/auth/response/google",
-	"googleRedirectAfterAuth":"http://localhost:8181/"
+	"googleRedirectAfterAuth":"http://localhost:8181/",
+
+	"linkedinKey": "---",
+	"linkedinSecret": "---",
+	"linkedinEndpointAfterAuth": "http://localhost:8181/auth/response/linkedin",
+	"linkedinRedirectAfterAuth":"http://localhost:8181/"
 }
