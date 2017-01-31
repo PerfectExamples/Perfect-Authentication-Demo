@@ -40,6 +40,11 @@ func config() {
 			if let i = dict["linkedinEndpointAfterAuth"] { LinkedinConfig.endpointAfterAuth = i as! String }
 			if let i = dict["linkedinRedirectAfterAuth"] { LinkedinConfig.redirectAfterAuth = i as! String }
 
+			if let i = dict["slackKey"] { SlackConfig.appid = i as! String }
+			if let i = dict["slackSecret"] { SlackConfig.secret = i as! String }
+			if let i = dict["slackEndpointAfterAuth"] { SlackConfig.endpointAfterAuth = i as! String }
+			if let i = dict["slackRedirectAfterAuth"] { SlackConfig.redirectAfterAuth = i as! String }
+
 		}
 	} else {
 		print("Unable to get Configuration")

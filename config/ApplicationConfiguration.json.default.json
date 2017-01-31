@@ -17,5 +17,11 @@
 	"linkedinKey": "---",
 	"linkedinSecret": "---",
 	"linkedinEndpointAfterAuth": "http://localhost:8181/auth/response/linkedin",
-	"linkedinRedirectAfterAuth":"http://localhost:8181/"
+	"linkedinRedirectAfterAuth":"http://localhost:8181/",
+
+	"slackKey": "---",
+	"slackSecret": "---",
+	"slackEndpointAfterAuth": "http://localhost:8181/auth/response/slack",
+	"slackRedirectAfterAuth":"http://localhost:8181/"
+
 }

@@ -72,11 +72,13 @@ routes.append(["method":"get", "uri":"/to/facebook", "handler":Facebook.sendToPr
 routes.append(["method":"get", "uri":"/to/github", "handler":GitHub.sendToProvider])
 routes.append(["method":"get", "uri":"/to/google", "handler":Google.sendToProvider])
 routes.append(["method":"get", "uri":"/to/linkedin", "handler":Linkedin.sendToProvider])
+routes.append(["method":"get", "uri":"/to/slack", "handler":Slack.sendToProvider])
 
 routes.append(["method":"get", "uri":"/auth/response/facebook", "handler":Facebook.authResponse])
 routes.append(["method":"get", "uri":"/auth/response/github", "handler":GitHub.authResponse])
 routes.append(["method":"get", "uri":"/auth/response/google", "handler":Google.authResponse])
 routes.append(["method":"get", "uri":"/auth/response/linkedin", "handler":Linkedin.authResponse])
+routes.append(["method":"get", "uri":"/auth/response/slack", "handler":Slack.authResponse])
 
 routes.append(["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.staticFiles,
 "documentRoot":"./webroot",
