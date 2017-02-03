@@ -22,6 +22,12 @@
 	"slackKey": "---",
 	"slackSecret": "---",
 	"slackEndpointAfterAuth": "http://localhost:8181/auth/response/slack",
-	"slackRedirectAfterAuth":"http://localhost:8181/"
+	"slackRedirectAfterAuth":"http://localhost:8181/",
+
+	"salesforceKey": "---",
+	"salesforceSecret": "---",
+	"salesforceEndpointAfterAuth": "http://localhost:8181/auth/response/salesforce",
+	"salesforceRedirectAfterAuth":"http://localhost:8181/"
+
 
 }

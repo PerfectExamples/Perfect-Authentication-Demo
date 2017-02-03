@@ -31,6 +31,18 @@ class Handlers {
 		}
 	}
 
+	static func cont(data: [String:Any]) throws -> RequestHandler {
+		return {
+			request, response in
+			var context: [String : Any] = ["sessionID": request.session?.token ?? ""]
+
+			if let i = request.session?.userid, !i.isEmpty { context["authenticated"] = true }
+
+			response.render(template: "templates/index", context: context)
+		}
+	}
+
+
 	public static func logout(data: [String:Any]) throws -> RequestHandler {
 		return {
 			request, response in

@@ -21,6 +21,7 @@ import PerfectHTTP
 import PerfectHTTPServer
 import PerfectSession
 import OAuth2
+import PerfectRequestLogger
 
 // NOTE: Facebook config vars are in /config/ApplictionConfiguration.json
 // Then they are loaded here:
@@ -34,6 +35,9 @@ SessionConfig.IPAddressLock = false
 SessionConfig.userAgentLock = false
 SessionConfig.CSRF.checkState = false
 SessionConfig.CORS.enabled = false
+SessionConfig.cookieSameSite = .lax
+
+RequestLogFile.location = "./log.log"
 
 // Configure Server
 var confData: [String:[[String:Any]]] = [
@@ -54,9 +58,19 @@ var confData: [String:[[String:Any]]] = [
 					"name":SessionMemoryFilter.filterAPIRequest,
 					],
 				[
+					"type":"request",
+					"priority":"high",
+					"name":RequestLogger.filterAPIRequest,
+					],
+				[
 					"type":"response",
 					"priority":"high",
 					"name":SessionMemoryFilter.filterAPIResponse,
+					],
+				[
+					"type":"response",
+					"priority":"high",
+					"name":RequestLogger.filterAPIResponse,
 					]
 			]
 		]
