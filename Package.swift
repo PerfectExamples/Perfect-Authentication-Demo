@@ -10,5 +10,6 @@ let package = Package(
         .Package(url: "https://github.com/iamjono/JSONConfig.git", majorVersion: 0),
         .Package(url: "https://github.com/PerfectlySoft/Perfect-Authentication.git", majorVersion: 1),
         .Package(url: "https://github.com/PerfectlySoft/Perfect-RequestLogger.git", majorVersion: 1),
+        .Package(url: "https://github.com/stormpath/Turnstile-Perfect.git", majorVersion:1),
     ]
 )
