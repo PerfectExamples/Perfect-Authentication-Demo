@@ -5,3 +5,4 @@
 /config/ApplicationConfiguration.json
 /log.log
 Package.swift.orig
+Package.pins

@@ -7,7 +7,6 @@
 //
 
 import PerfectHTTP
-import TurnstileCrypto
 import OAuth2
 import PerfectSession
 
